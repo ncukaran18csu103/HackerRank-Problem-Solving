@@ -1,0 +1,26 @@
+# PLUS _MINUS
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;cin>>n;
+    int arr[n];for(int i=0;i<n;i++)cin>>arr[i];
+    float p=0,ne=0,zero=0;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>0)
+        {
+            p++;
+        }
+        
+        else if(arr[i]<0)
+        {
+            ne++;
+        }
+        
+        else{zero++;}
+    }
+    cout<<float(p/n)<<endl<<float(ne/n)<<endl<<float(zero/n);
+    return 0;
+}
