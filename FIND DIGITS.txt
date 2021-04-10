@@ -1,0 +1,47 @@
+#FIND DIGITS
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n1;cin>>n1;
+    int count=0;
+    while(n1--)
+    {
+        int n,m;
+        cin>>n;
+        n=m;
+        while(n>0)
+        {
+            int a=n%10;
+            n=n/10;
+            if(n%a==0 && a!=0)
+            {
+                count++;
+            }
+          
+        }
+        cout<< count<<endl;
+    }
+      /*  int t;
+    cin >> t;
+    while(t--) {
+        long long n, m;
+        int digitCount = 0;
+
+        cin >> n;
+        m = n;
+
+        while(m > 0) {
+            int curDigit = m % 10;
+            m /= 10;
+            if(curDigit != 0 && n % curDigit == 0) {
+                digitCount++;
+            }
+        }
+        cout << digitCount << "\n";
+    }
+
+
+    
+}
