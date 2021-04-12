@@ -1,0 +1,26 @@
+#MINIMUM LOSS
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    long long a1=100000000000;
+    for(int i=0;i<n;i++)
+    {
+        for(int i1=i;i1<n;i1++)
+        {
+            int a=arr[i]-arr[i1];
+            if(a1>a && a>0)
+            {
+                a1=a;
+            }
+        }
+    }
+    cout<<a1;
+}
