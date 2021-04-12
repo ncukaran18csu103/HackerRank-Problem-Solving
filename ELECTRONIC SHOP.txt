@@ -1,0 +1,40 @@
+#ELECTRONIC SHOP
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,key,mousce;
+    int n1=n;
+    cin>>n>>key>>mousce;
+    int arr[key],arr1[mousce];
+    for(int i=0;i<key;i++)
+    {
+        cin>>arr[key];
+    }
+    for(int i=0;i<mousce;i++)
+    {
+        cin>>arr1[mousce];
+    }
+    if(mousce==1)
+    {
+        if(key==1)
+        {
+            if(arr[0]+arr1[0]<=n) cout<<arr[key]+arr1[mousce];
+            else if (arr[0]+arr1[0]>n) cout<<"-1";
+        }
+    }
+    for(int i=0;i<key;i++)
+    {
+        for(int i1=0;i1<mousce;i1++)
+        {
+            if(arr[i]+arr1[i1]<=n1)
+            {
+                n=arr[i]+arr1[i1];
+            }
+            
+        }
+    }
+    
+    if(n>0)cout<<n;
+    else cout<<"-1";
+}
