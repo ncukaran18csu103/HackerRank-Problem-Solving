@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int nums;
+    cin>>nums;
+    int target;cin>>target;
+    int arr[nums];
+    for(int i=0;i<=nums;i++)cin>>arr[i];
+    for(int i=0;i<nums;i++)
+    {
+        for(int i1=i+1;i1<nums;i1++)
+        {
+            if(arr[i]==target-arr[i1] && i!=i1)
+            {
+                cout<<'['<<i<<","<<i1<<"]";
+                break;
+            }
+        }   
+    }
+    return 0;
+}
