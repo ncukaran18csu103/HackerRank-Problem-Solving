@@ -1,0 +1,23 @@
+//q3
+///Given a positive integer A, the task is to count the total number of set bits in the binary representation of all the numbers from 1 to A.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;cin>>n;        int count=0;
+
+    int sum=0;
+    for(int i=1;i<=n;i++)
+    {
+        count=0;
+        while(i>0)  
+        {
+            if(i&1==1){count++;}
+            i=i>>1;
+        
+        }
+        sum=sum+count;
+   }
+   cout<<sum;
+}
