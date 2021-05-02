@@ -1,0 +1,18 @@
+//q4
+
+
+//divide 2 numbers without multiplication ,%,/
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;cin>>a>>b;
+    int x=0,sum=0;
+    for(int i=1;i<=b;i++)
+    {
+        x++;
+        a=a>>i;
+        sum=sum+a;
+    }
+    cout<<sum/b;
+}
