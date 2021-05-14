@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int row,col;
+    cin>>row;
+    int n=row;
+    /*
+        *
+       **
+      ***
+     ****
+    *****
+    */
+    int count=0;
+    for(int i=1;i<=n;i++)
+    {
+        count=n-i;
+        for(int i1=0;i1<count;i1++)
+        {
+            cout<<" ";
+        }
+        for(int i1=0;i1<n-count;i1++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+}
