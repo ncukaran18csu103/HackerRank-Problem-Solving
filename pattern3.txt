@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int row,col;
+    cin>>row>>col;
+    for(int i=row;i>0;i--)
+    {
+        for(int i1=0;i1<i;i1++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
+
+/tmp/LaykW5xr3S.o
+5 5
+*****
+****
+***
+**
+*
