@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int issum(int n)
+{
+    int sum=0;
+    for(int i=1;i<=n;i++)
+    {
+        sum=sum+i;
+    }
+    return sum;
+}
+int main()
+{
+    //sum of n natural number
+    int n;cin>>n;
+    cout<<issum(n);
+    return 0;
+}
