@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+    /*int n;cin>>n;
+    int n1,sum=0;
+    while(n!=0)
+    {
+        n1=n%10;
+        sum=sum*10+n1;
+        n=n/10;
+    }
+    cout<<sum;*/
+    
+    //prime no checking by the help of sqrt
+    /*int count=0;
+    int n;cin>>n;
+    for(int i=2;i<=sqrt(n);i++)
+    {
+        if(n%i==0){cout<<"NON prime";count++;}
+    }
+    if(count==0)cout<<"PRIME";*/
+
+    //ARMSTRONG NUMBER
+    int n;cin>>n;int sum=0;
+    while(n>0)
+    {
+        int last=n%10;
+        
+        sum=sum+pow(last,3);
+        n=n/10;
+    }
+    if(sum==n)cout<<"ARMSTRONG";
+    return 0;
+}
