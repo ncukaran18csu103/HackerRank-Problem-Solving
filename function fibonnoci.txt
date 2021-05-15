@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int fib(int n)
+{
+    int t1=0,t2=1;
+    int sub=0;
+    for(int i=0;i<n;i++)
+    {
+        cout<<t1<<endl;
+        sub=t1+t2;
+        t1=t2;
+        t2=sub;
+    }
+}
+int main()
+{
+    int n;cin>>n;
+    cout<<fib(n);
+}
