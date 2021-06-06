@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int k1,v1,k2,v2;
+    cin>>k1>>v1>>k2>>v2;
+    int count=0;
+    for(int i=0;i<100000;i++)
+    {
+        k1=k1+v1;
+        k2=k2+v2;
+        if(k1==k2)
+        {
+            cout<<"YES";
+            count++;
+            break;
+        }
+    }
+    if(count==0)
+    {
+        cout<<"NO";
+    }
+}
+/*kangroo teams*/
